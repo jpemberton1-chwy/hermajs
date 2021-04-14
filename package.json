@@ -4,7 +4,10 @@
   "description": "Build testing harnesses for components",
   "main": "dist/herma.js",
   "scripts": {
-    "test": "jest"
+    "build": "tsc src/index.ts --outDir dist",
+    "lint": "prettier --write .",
+    "test": "jest --watch",
+    "test:ci": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,5 +29,25 @@
   "bugs": {
     "url": "https://github.com/jpemberton1-chwy/hermajs/issues"
   },
-  "homepage": "https://github.com/jpemberton1-chwy/hermajs#readme"
+  "homepage": "https://github.com/jpemberton1-chwy/hermajs#readme",
+  "devDependencies": {
+    "@types/jest": "26.0.22",
+    "@typescript-eslint/eslint-plugin": "4.22.0",
+    "@typescript-eslint/parser": "4.22.0",
+    "eslint": "7.24.0",
+    "eslint-config-prettier": "8.2.0",
+    "husky": "6.0.0",
+    "jest": "26.6.3",
+    "prettier": "2.2.1",
+    "ts-jest": "26.5.4",
+    "typescript": "4.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
 }
