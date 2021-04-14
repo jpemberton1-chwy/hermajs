@@ -1,0 +1,30 @@
+{
+  "name": "hermajs",
+  "version": "0.0.1",
+  "description": "Build testing harnesses for components",
+  "main": "dist/herma.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpemberton1-chwy/hermajs.git"
+  },
+  "keywords": [
+    "testing",
+    "data",
+    "components",
+    "reactjs",
+    "utilities",
+    "helpers",
+    "devtools",
+    "dev",
+    "tools"
+  ],
+  "author": "Jonathon Pemberton <jpemberton1@chewy.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpemberton1-chwy/hermajs/issues"
+  },
+  "homepage": "https://github.com/jpemberton1-chwy/hermajs#readme"
+}
